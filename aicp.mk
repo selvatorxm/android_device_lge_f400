@@ -1,9 +1,13 @@
 $(call inherit-product, device/lge/f400/full_f400.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Aicp stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_f400
+PRODUCT_NAME := aicp_f400
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Mehmet KÖKLÜ (croatan)"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="g3" \
